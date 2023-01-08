@@ -4,36 +4,45 @@ import { BsGithub } from 'react-icons/bs';
 import { BsLinkedin } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { RiDownload2Fill } from 'react-icons/ri';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Header = () => {
+  React.useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
+
   return (
     <header className={styles.header}>
       <div className={styles.bg}></div>
       <div className={`container ${styles.me}`}>
         <img
+          data-aos="flip-right"
           src="https://previews.aspirity.com/spirit/assets/img/img_avatar.png"
           alt="me"
         />
-        <div className={styles.info}>
+        <div className={styles.info} data-aos="fade-left">
           <h1>John Anderson_</h1>
           <p>frontend developer, QA-engineer</p>
           <table>
-            <tr>
-              <td>AGE:</td>
-              <td>23</td>
-            </tr>
-            <tr>
-              <td>PHONE:</td>
-              <td>8 (234) 456-33-33</td>
-            </tr>
-            <tr>
-              <td>EMAIL:</td>
-              <td>mail@mail.com</td>
-            </tr>
-            <tr>
-              <td>ADDRESS:</td>
-              <td>Melbourne Victoria 3000 Australia</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>AGE:</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td>PHONE:</td>
+                <td>8 (234) 456-33-33</td>
+              </tr>
+              <tr>
+                <td>EMAIL:</td>
+                <td>mail@mail.com</td>
+              </tr>
+              <tr>
+                <td>ADDRESS:</td>
+                <td>Melbourne Victoria 3000 Australia</td>
+              </tr>
+            </tbody>
           </table>
           <div className={styles.social}>
             <a href=".#">
@@ -48,7 +57,11 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={`container ${styles.hello}`}>
+      <div
+        className={`container ${styles.hello}`}
+        id="hello"
+        data-aos="fade-right"
+      >
         <div>
           <h1>Hi_</h1>
           <p>

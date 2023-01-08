@@ -1,9 +1,19 @@
+.active {
+  background-color: #fff;
+  box-shadow: 0 5px 8px 0 rgb(0 0 0 / 14%);
+}
+
 .nav {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0 5px 8px 0 rgb(0 0 0 / 14%);
+  transition: all 1s;
+
+  .linksActive {
+    a {
+      color: #555 !important;
+    }
+  }
 
   .links {
     height: 70px;
@@ -19,7 +29,7 @@
       font-weight: 700;
       transition: all 0.3s;
 
-      // color: #fff;
+      color: #fff;
 
       &::after {
         content: '_';
