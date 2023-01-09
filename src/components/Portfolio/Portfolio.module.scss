@@ -63,13 +63,15 @@
       }
 
       img {
-        max-width: 40%;
+        max-width: 45%;
+        object-fit: cover;
       }
 
       .content {
         border: 1px solid #f1f1f1;
         padding: 50px 50px 40px 30px;
         position: relative;
+        overflow: hidden;
 
         h2 {
           font-size: 18px;
@@ -96,19 +98,23 @@
         }
 
         a {
+          margin-top: 20px;
           color: #6d56c1;
           transition: all 0.3s;
-          position: absolute;
-          bottom: 30px;
-          right: 50px;
+          float: right;
           text-decoration: none;
           cursor: pointer;
           font-size: 14px;
           line-height: 20px;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
 
         .stack {
           display: flex;
+          flex-wrap: wrap;
           gap: 15px;
 
           button {
@@ -229,6 +235,27 @@
           font-weight: 700;
           text-transform: uppercase;
           margin-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+
+@media screen and (max-width: 1024px) {
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+
+@media screen and (max-width: 700px) {
+  .portfolio {
+    .projects {
+      .project {
+        flex-direction: column;
+
+        img {
+          max-width: 100%;
         }
       }
     }

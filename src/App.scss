@@ -17,3 +17,23 @@ small {
     margin: 0 auto;
   }
 }
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    .container {
+      max-width: 80%;
+    }
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+
+@media screen and (max-width: 600px) {
+.wrapper {
+    .container {
+      max-width: 90%;
+    }
+  }
+}

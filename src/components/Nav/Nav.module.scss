@@ -10,15 +10,21 @@
   transition: all 1s;
 
   .linksActive {
-    a {
+    a,
+    span {
       color: #555 !important;
     }
+  }
+
+  .activeTable {
+    display: none !important;
   }
 
   .links {
     height: 70px;
     display: flex;
     align-items: center;
+    color: #fff;
 
     a {
       padding-right: 50px;
@@ -45,6 +51,76 @@
           color: #6d56c1;
         }
       }
+    }
+  }
+
+  .loyaut {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.8);
+
+    span {
+      background: transparent;
+      content: 'x';
+      position: absolute;
+      top: 2%;
+      color: #fff;
+      left: 10.2%;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    div {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      a {
+        color: #fff;
+        padding: 10px;
+
+        &::after {
+          content: '_';
+          opacity: 0;
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    .activeTable {
+      display: flex !important;
+
+      span {
+        cursor: pointer;
+      }
+    }
+    .activeWeb {
+      display: none;
     }
   }
 }

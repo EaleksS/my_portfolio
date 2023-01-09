@@ -1,5 +1,6 @@
 .header {
-  height: 100vh;
+  display: block;
+  height: 100%;
   border-bottom: 1px solid rgba(5, 5, 5, 0.2);
 
   .bg {
@@ -84,7 +85,8 @@
   .hello {
     display: flex;
     align-items: center;
-    height: 50vh;
+    overflow: hidden;
+    padding: 100px 0;
 
     h1 {
       font-size: 36px;
@@ -131,4 +133,21 @@
       }
     }
   }
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================ */
+
+@media screen and (max-width: 1024px) {
+  .header {
+    .me {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================ */
+
+@media screen and (max-width: 600px) {
 }
