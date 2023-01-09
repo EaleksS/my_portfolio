@@ -18,29 +18,33 @@ const Header = () => {
       <div className={`container ${styles.me}`}>
         <img
           data-aos="flip-right"
-          src="https://previews.aspirity.com/spirit/assets/img/img_avatar.png"
+          src="https://via.placeholder.com/300x400"
           alt="me"
         />
         <div className={styles.info} data-aos="fade-left">
-          <h1>John Anderson_</h1>
-          <p>frontend developer, QA-engineer</p>
+          <h1>Имя Фамилия_</h1>
+          <p>frontend разработчик</p>
           <table>
             <tbody>
               <tr>
-                <td>AGE:</td>
-                <td>23</td>
+                <td>возраст:</td>
+                <td>18</td>
               </tr>
               <tr>
-                <td>PHONE:</td>
-                <td>8 (234) 456-33-33</td>
+                <td>телефон:</td>
+                <td>
+                  <a href=".#">8 (999) 999-99-99</a>
+                </td>
               </tr>
               <tr>
-                <td>EMAIL:</td>
-                <td>mail@mail.com</td>
+                <td>Почта:</td>
+                <td>
+                  <a href=".#">ealkser@gmail.com</a>
+                </td>
               </tr>
               <tr>
-                <td>ADDRESS:</td>
-                <td>Melbourne Victoria 3000 Australia</td>
+                <td>Адресс:</td>
+                <td>Россия Республика Саха (Якутия), г. Якутск</td>
               </tr>
             </tbody>
           </table>
@@ -63,20 +67,21 @@ const Header = () => {
         data-aos="fade-right"
       >
         <div>
-          <h1>Hi_</h1>
+          <h1>Привет_</h1>
           <p>
-            I am Junior Web developer able to build a Web presence from the
-            ground up - from concept, navigation, layout and programming to UX
-            and SEO. Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast learner,
-            hard worker and team player who is proficient in an array of
-            scripting languages and multimedia Web tools.
+            Я младший веб-разработчик, способный создать веб-присутствие с с
+            нуля - от концепции, навигации, верстки и программирования до UX и
+            SEO. Умею писать хорошо продуманный, тестируемый и эффективный кода
+            с использованием современных передовых методов веб-разработки.
+            Быстрая обучаемость, трудолюбивый работник и командный игрок,
+            владеющий целым рядом языков сценариев и мультимедийных
+            веб-инструментов.
           </p>
           <button>
             <span>
               <RiDownload2Fill />
             </span>
-            DOWNLOAD CV
+            СКАЧАТЬ РЕЗЮМЕ
           </button>
         </div>
       </div>

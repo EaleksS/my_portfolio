@@ -1,6 +1,5 @@
 import React from 'react';
 import Education from './Education';
-import Employment from './Employment';
 import GeneralSkills from './GeneralSkills';
 import styles from './Resume.module.scss';
 import AOS from 'aos';
@@ -17,16 +16,16 @@ const Resume = () => {
       id="resume"
       data-aos="fade-right"
     >
-      <h1>Resume_</h1>
+      <h1>Резюме_</h1>
       <p>
-        Lorem ipsum dolor sit amet, communication adipisicing elit, helpful
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud sence of humour ullamco laboris nisi ut
-        honest ea commodo consequat. Duis aute irure dolor in upper-intermediate
-        english level velit dolore eu ivivdtevoluptatem ontend developer.
+        Дотошный веб-разработчик с более чем 2-летним опытом работы с
+        интерфейсом и страстью к адаптивному дизайну веб-сайтов, а также твердо
+        убежденный в подходе, ориентированном на мобильные устройства.
+        Сертифицирован W3C. Реализован новый подход к адаптивному веб-сайту,
+        который увеличил мобильный трафик на 20%.
       </p>
       <Education />
-      <Employment />
+      {/* <Employment /> */}
       <GeneralSkills />
     </div>
   );

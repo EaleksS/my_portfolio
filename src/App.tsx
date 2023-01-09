@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import Blog from './components/Blog/Blog';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Nav from './components/Nav/Nav';
@@ -16,7 +15,7 @@ function App() {
       <Resume />
       <Portfolio />
       <Testimonials />
-      <Blog />
+      {/* <Blog /> */}
       <Footer />
     </div>
   );

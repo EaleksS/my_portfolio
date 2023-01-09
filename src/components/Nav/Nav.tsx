@@ -22,12 +22,11 @@ const Nav = () => {
           scroll && styles.linksActive
         } ${styles.activeWeb}`}
       >
-        <a href="#hello">HELLO</a>
-        <a href="#resume">RESUME</a>
-        <a href="#portfolio">PORTFOLIO</a>
-        <a href="#testimonials">TESTIMONIALS</a>
-        <a href="#blog">BLOG</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#hello">Обо мне</a>
+        <a href="#resume">Резюме</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#contact">Контакты</a>
       </div>
       {/* Burger menu */}
       <div
@@ -48,22 +47,19 @@ const Nav = () => {
           <div className={`${styles.menu}`}>
             <div>
               <a href="#hello" onClick={() => setOpenMenu(false)}>
-                HELLO
+                Обо мне
               </a>
               <a href="#resume" onClick={() => setOpenMenu(false)}>
-                RESUME
+                Резюме
               </a>
               <a href="#portfolio" onClick={() => setOpenMenu(false)}>
-                PORTFOLIO
+                Портфолио
               </a>
               <a href="#testimonials" onClick={() => setOpenMenu(false)}>
-                TESTIMONIALS
-              </a>
-              <a href="#blog" onClick={() => setOpenMenu(false)}>
-                BLOG
+                Отзывы
               </a>
               <a href="#contact" onClick={() => setOpenMenu(false)}>
-                CONTACT
+                Контакты
               </a>
             </div>
           </div>

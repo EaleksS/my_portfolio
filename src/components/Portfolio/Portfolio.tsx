@@ -17,31 +17,31 @@ const Portfolio = () => {
       id="portfolio"
       data-aos="fade-right"
     >
-      <h1>My projects_</h1>
+      <h1>Мои проекты_</h1>
       <div className={styles.btn}>
         <button
           className={`${activeBtn === '#all' && styles.active}`}
           onClick={() => setActiveBtn('#all')}
         >
-          ALL
+          Всё
         </button>
         <button
-          className={`${activeBtn === '#mobile' && styles.active}`}
-          onClick={() => setActiveBtn('#mobile')}
+          className={`${activeBtn === '#react' && styles.active}`}
+          onClick={() => setActiveBtn('#react')}
         >
-          MOBILE APPS
+          React
         </button>
         <button
-          className={`${activeBtn === '#web' && styles.active}`}
-          onClick={() => setActiveBtn('#web')}
+          className={`${activeBtn === '#wordpress' && styles.active}`}
+          onClick={() => setActiveBtn('#wordpress')}
         >
-          WEB-SITES
+          Wordpress
         </button>
         <button
-          className={`${activeBtn === '#landing' && styles.active}`}
-          onClick={() => setActiveBtn('#landing')}
+          className={`${activeBtn === '#verstka' && styles.active}`}
+          onClick={() => setActiveBtn('#verstka')}
         >
-          LANDING PAGES
+          Верстка
         </button>
       </div>
       <Projects activeBtn={activeBtn} />

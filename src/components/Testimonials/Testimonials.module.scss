@@ -4,6 +4,31 @@
   // overflow: hidden;
 }
 
+.testiBtn {
+  text-align: center;
+  margin: 50px 0;
+
+  button {
+    background-color: #6d56c1;
+    border-radius: 25px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    transition: all 0.3s;
+    width: 200px;
+    height: 50px;
+
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
 .testimonials {
   height: 400px;
   background: linear-gradient(

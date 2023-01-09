@@ -61,6 +61,8 @@
     left: 0;
     bottom: 0;
     background: rgba($color: #000000, $alpha: 0.8);
+    overflow: hidden;
+    height: 100vh;
 
     span {
       background: transparent;
@@ -75,18 +77,21 @@
   }
 
   .menu {
-    position: absolute;
+    position: fixed;
     top: 35vh;
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: hidden;
+    height: 100vh;
 
     div {
       width: 100%;
-      height: 100%;
+      height: 100vh;
       display: flex;
       align-items: center;
       flex-direction: column;
+      overflow: hidden;
 
       a {
         color: #fff;

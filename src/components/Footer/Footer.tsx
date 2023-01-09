@@ -15,27 +15,27 @@ const Footer = () => {
   return (
     <div className={styles.footer} id="contact" data-aos="fade-up">
       <div className={`container`}>
-        <h1 data-aos="fade-right">Get in touch_</h1>
+        <h1 data-aos="fade-right">свяжитесь со мной_</h1>
         <div className={styles.content}>
           <div>
             <table>
               <tbody>
                 <tr>
-                  <td>PHONE:</td>
+                  <td>ТЕЛЕФОН:</td>
                   <td>
                     <a href=".#">8 (234) 456-33-33</a>
                   </td>
                 </tr>
                 <tr>
-                  <td>SKYPE:</td>
+                  <td>DISCORD:</td>
                   <td>
                     <a href=".#">iamivanovivan</a>
                   </td>
                 </tr>
                 <tr>
-                  <td>EMAIL:</td>
+                  <td>ПОЧТА:</td>
                   <td>
-                    <a href=".#">mail@mail.com</a>
+                    <a href=".#">ealkser@gmail.com</a>
                   </td>
                 </tr>
               </tbody>
@@ -48,18 +48,16 @@ const Footer = () => {
             </div>
           </div>
           <form className={styles.form} onSubmit={handleSubmit}>
-            <label>Or just write me a letter here_</label>
-            <input type="text" placeholder="Your name" />
-            <input type="email" placeholder="Your e-mail" />
+            <label>Или просто напишите мне письмо здесь_</label>
+            <input type="text" placeholder="Ваше имя" />
+            <input type="email" placeholder="Ваш e-mail" />
             <textarea
               cols={30}
               rows={6}
-              placeholder="Type the message here"
+              placeholder="Введите ваше сообщение здесь"
             ></textarea>
-            <button type="submit">send</button>
-            <p>
-              © 2016 Ivan Susanin. All Rights <br /> Reserved
-            </p>
+            <button type="submit">Отправить</button>
+            <p>© 2023 Эрнест Алексеев.</p>
           </form>
         </div>
       </div>

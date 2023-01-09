@@ -10,7 +10,7 @@ const GeneralSkills = () => {
 
   return (
     <div className={styles.generalSkills} data-aos="fade-right">
-      <h3>GENERAL SKILLS</h3>
+      <h3>ОБЩИЕ НАВЫКИ</h3>
       <table>
         <tbody>
           <tr>
