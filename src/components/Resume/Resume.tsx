@@ -25,7 +25,6 @@ const Resume = () => {
         который увеличил мобильный трафик на 20%.
       </p>
       <Education />
-      {/* <Employment /> */}
       <GeneralSkills />
     </div>
   );

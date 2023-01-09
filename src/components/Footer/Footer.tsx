@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className={styles.footer} id="contact" data-aos="fade-up">
       <div className={`container`}>
-        <h1 data-aos="fade-right">свяжитесь со мной_</h1>
+        <h1 data-aos="fade-right">Свяжитесь со мной_</h1>
         <div className={styles.content}>
           <div>
             <table>
