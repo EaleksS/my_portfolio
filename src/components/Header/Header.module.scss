@@ -176,6 +176,26 @@
   .header {
     .me {
       top: 120px;
+
+      .info {
+        h1 {
+          font-size: 34px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        table {
+          td {
+            font-size: 14px;
+          }
+        }
+
+        .social {
+          font-size: 25px;
+        }
+      }
     }
   }
 }
