@@ -35,7 +35,9 @@ const Project = ({
               <button key={index}>{item}</button>
             ))}
           </div>
-          <a href={links}>{links}</a>
+          <a href={links} target="_blank" rel="noreferrer">
+            {links}
+          </a>
         </div>
       </div>
       {/* Modal */}
@@ -54,7 +56,9 @@ const Project = ({
             <h2>{name}</h2>
             <img src={image} alt={name} />
             <p>{comment}</p>
-            <a href={links}>{links}</a>
+            <a href={links} target="_blank" rel="noreferrer">
+              {links}
+            </a>
             <div className={styles.usingStack}>
               <h2>USING STACK:</h2>
               {stack.map((item, index) => (

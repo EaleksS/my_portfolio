@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Portfolio = () => {
-  const [activeBtn, setActiveBtn] = useState('#all');
+  const [activeBtn, setActiveBtn] = useState('#react');
 
   React.useEffect(() => {
     AOS.init({ duration: 1000, once: true });

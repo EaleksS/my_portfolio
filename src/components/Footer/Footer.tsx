@@ -23,28 +23,42 @@ const Footer = () => {
                 <tr>
                   <td>ТЕЛЕФОН:</td>
                   <td>
-                    <a href=".#">8 (234) 456-33-33</a>
+                    <a href="tel:89999999999">8 (999) 999-99-99</a>
                   </td>
                 </tr>
                 <tr>
                   <td>DISCORD:</td>
                   <td>
-                    <a href=".#">iamivanovivan</a>
+                    <a
+                      href="https://discord.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      discordName
+                    </a>
                   </td>
                 </tr>
                 <tr>
                   <td>ПОЧТА:</td>
                   <td>
-                    <a href=".#">ealkser@gmail.com</a>
+                    <a href="mailto:ealkser@gmail.com">ealkser@gmail.com</a>
                   </td>
                 </tr>
               </tbody>
             </table>
             <div className={styles.social}>
-              <a href=".#">Facebook</a>
-              <a href=".#">Linkedin</a>
-              <a href=".#">GitHub</a>
-              <a href=".#">Bitbucket</a>
+              <a href="https://github.com" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a href="https://whatsapp.com" target="_blank" rel="noreferrer">
+                Whatsapp
+              </a>
+              <a href="https://discord.com" target="_blank" rel="noreferrer">
+                Discord
+              </a>
+              <a href="https://telegram.org" target="_blank" rel="noreferrer">
+                Telegram
+              </a>
             </div>
           </div>
           <form className={styles.form} onSubmit={handleSubmit}>

@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import { BsGithub } from 'react-icons/bs';
-import { BsLinkedin } from 'react-icons/bs';
-import { BsFacebook } from 'react-icons/bs';
+import { BsTelegram } from 'react-icons/bs';
 import { RiDownload2Fill } from 'react-icons/ri';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import meImg from '../../assets/ernest2.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -16,13 +17,9 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.bg}></div>
       <div className={`container ${styles.me}`}>
-        <img
-          data-aos="flip-right"
-          src="https://via.placeholder.com/300x400"
-          alt="me"
-        />
+        <img data-aos="flip-right" src={meImg} alt="me" />
         <div className={styles.info} data-aos="fade-left">
-          <h1>Имя Фамилия_</h1>
+          <h1>Эрнест Алексеев_</h1>
           <p>frontend разработчик</p>
           <table>
             <tbody>
@@ -33,13 +30,13 @@ const Header = () => {
               <tr>
                 <td>телефон:</td>
                 <td>
-                  <a href=".#">8 (999) 999-99-99</a>
+                  <a href="tel:89999999999">8 (999) 999-99-99</a>
                 </td>
               </tr>
               <tr>
                 <td>Почта:</td>
                 <td>
-                  <a href=".#">ealkser@gmail.com</a>
+                  <a href="mailto:ealkser@gmail.com">ealkser@gmail.com</a>
                 </td>
               </tr>
               <tr>
@@ -49,14 +46,14 @@ const Header = () => {
             </tbody>
           </table>
           <div className={styles.social}>
-            <a href=".#">
+            <a href="https://github.com" target="_blank" rel="noreferrer">
               <BsGithub />
             </a>
-            <a href=".#">
-              <BsLinkedin />
+            <a href="https://telegram.me/" target="_blank" rel="noreferrer">
+              <BsTelegram />
             </a>
-            <a href=".#">
-              <BsFacebook />
+            <a href="https://telegram.me/" target="_blank" rel="noreferrer">
+              <IoLogoWhatsapp />
             </a>
           </div>
         </div>
