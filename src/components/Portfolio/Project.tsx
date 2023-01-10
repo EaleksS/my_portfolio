@@ -19,6 +19,7 @@ const Project = ({
   stack,
   comment,
   links,
+  pid,
 }: IProjectsData) => {
   const [openModal, setOpenModal]: any = useState(false);
 
@@ -27,7 +28,9 @@ const Project = ({
       <div className={styles.project} onClick={() => setOpenModal(true)}>
         <img src={image} alt={name} />
         <div className={styles.content}>
-          <h2>{name}</h2>
+          <h2>
+            {pid}. {name}
+          </h2>
           <p>{title}</p>
           <h3>USED STACK:</h3>
           <div className={styles.stack}>

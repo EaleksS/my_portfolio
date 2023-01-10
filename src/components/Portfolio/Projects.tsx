@@ -92,7 +92,7 @@ const Projects = ({ activeBtn }: any): JSX.Element => {
 
   return (
     <div className={styles.projects}>
-      {projectsDataNew.map((item) => (
+      {projectsDataNew.reverse().map((item) => (
         <Project key={item.pid} {...item} />
       ))}
     </div>

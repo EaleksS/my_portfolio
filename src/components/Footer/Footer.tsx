@@ -71,7 +71,7 @@ const Footer = () => {
               placeholder="Введите ваше сообщение здесь"
             ></textarea>
             <button type="submit">Отправить</button>
-            <p>© 2023 Эрнест Алексеев.</p>
+            <p>© 2023 Данил Николаев.</p>
           </form>
         </div>
       </div>

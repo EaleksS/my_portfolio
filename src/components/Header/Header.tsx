@@ -19,7 +19,7 @@ const Header = () => {
       <div className={`container ${styles.me}`}>
         <img data-aos="flip-right" src={meImg} alt="me" />
         <div className={styles.info} data-aos="fade-left">
-          <h1>Эрнест Алексеев_</h1>
+          <h1>Данил Николаев_</h1>
           <p>frontend разработчик</p>
           <table>
             <tbody>
